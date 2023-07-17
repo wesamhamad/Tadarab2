@@ -9,7 +9,7 @@ html {
 }
 
 .custom-img {
-  background-image: url('https://images.unsplash.com/photo-1527576539890-dfa815648363?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80')
+  background-image: url('/bg.avif')
 }
 
 ul.hidden li:hover::after,
@@ -21,4 +21,28 @@ ul.sm\\:flex li:hover::after {
   background-color: #ccc;
   box-shadow: 0 2px 4px gray;
   margin-top: 3px;
+}
+
+@media (max-width: 768px) {
+  .ml-80 {
+    margin-left: 20px;
+  }
+
+  .mb-20 {
+    margin-bottom: 10px;
+  }
+
+  .mb-40 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ml-80 {
+    margin-left: 10px;
+  }
+
+  .text-3xl {
+    font-size: 1.8rem;
+  }
 }
