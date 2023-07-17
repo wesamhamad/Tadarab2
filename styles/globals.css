@@ -31,6 +31,24 @@ html {
   text-align: right;
 }
 
+@media (max-width: 768px) {
+  .custom-img-container .content {
+    padding: 2rem;
+  }
+
+  .custom-img-container .content h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  .custom-img-container .content p {
+    font-size: 1rem;
+  }
+
+  .custom-img-container .content button {
+    width: 50%;
+  }
+}
 
 ul.hidden li:hover::after,
 ul.sm\\:flex li:hover::after {
