@@ -38,6 +38,24 @@ const Internship = () => {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
+  const sectionRef = useRef(null);
+
+  const scrollToSection = () => {
+    const offset = -260; // Adjust the offset value as needed
+    const sectionTop = sectionRef.current.getBoundingClientRect().top;
+    window.scrollTo({
+      top: sectionTop + window.pageYOffset - offset,
+      behavior: 'smooth',
+    });
+  };
+
+  const handleClick = () => {
+    setShowAddInternshipForm(true);
+    scrollToSection(); // Adjust the timeout value as needed
+  };
+
+
+
 
   return (
     <>
@@ -73,7 +91,7 @@ const Internship = () => {
           <div className="ml-80 flex justify-center mt-2">
             <motion.button
               className="group relative h-12 w-48 overflow-hidden rounded-lg bg-white text-lg shadow mb-40"
-              onClick={() => setShowAddInternshipForm(true)}
+              onClick={handleClick}
               initial="hidden"
               animate="visible"
               variants={variants}
@@ -86,9 +104,13 @@ const Internship = () => {
         </motion.div>
       </div>
 
+
       {showAddInternshipForm && (
         <AddInternshipPage onAddInternship={handleAddInternship} onClose={() => setShowAddInternshipForm(false)} />
       )}
+      <section ref={sectionRef}>
+        {/* section content */}
+      </section>
     </>
   );
 };
