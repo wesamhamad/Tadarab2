@@ -13,7 +13,8 @@ const Hero = ({ heading, message }) => {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img text-right'>
+    // <div className='flex flex-col items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img text-right'>
+    <div className='flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img'>
       {/* Overlay */}
       <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/50 z-[2]' />
       <div className='p-5 text-white z-[2] mt-[3rem]'>
