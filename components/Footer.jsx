@@ -5,12 +5,7 @@ const Footer = () => {
     return (
         <footer className="bg-gray-900 text-white py-6" dir="rtl">
             <div className="container mx-auto px-4 flex justify-between items-center">
-                <div className="text-right w-1/3">
-                    <h4 className="text-lg font-semibold mb-4 "> منصة تَدرّب</h4>
-                    <p>
-                        توفر منصة تدرب فرص التدريب التعاوني للطلاب. نحن نسعى لتمكين الطلاب وتطوير مهاراتهم العملية من خلال جمع فرص التدريب المتاحة في مكان واحد
-                    </p>
-                </div>
+
                 <div className="text-center w-1/3">
                     <h4 className="text-lg font-semibold mb-4">تواصل معنا</h4>
                     <p>
