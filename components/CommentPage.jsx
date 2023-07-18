@@ -86,7 +86,7 @@ const CommentPage = ({ internships }) => {
                 </section>
 
                 <section className="mt-8">
-                    <h2 className="text-2xl font-bold mb-4 text-gray-800">التعليقات (مفلترة)</h2>
+                    <h2 className="text-2xl font-bold mb-4 text-gray-800">التعليقات</h2>
                     {filteredComments.length === 0 ? (
                         <p className="text-gray-500 text-center">لا توجد تعليقات لهذه الفرصة التدريبية</p>
                     ) : (
@@ -110,7 +110,7 @@ const CommentPage = ({ internships }) => {
 
                 {(selectedInternshipId || comments.length === 0) && (
                     <section className="mt-8">
-                        <h2 className="text-2xl font-bold mb-4 text-gray-800">أضف تعليقًا (للحفظ)</h2>
+                        <h2 className="text-2xl font-bold mb-4 text-gray-800">أضف تعليقًا</h2>
                         <div>
                             <input
                                 type="text"
